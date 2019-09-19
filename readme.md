@@ -77,3 +77,47 @@ You could run unit tests with the help of IntelliJ. But it is also possible to r
 
 If you just want to build your code without running test. Please use `./gradlew build -x test
 `
+
+should_perform_logical_boolean_operations:
+1.What is the knowledge point of the test? Where is the official document to the knowledge point?
+- To be familiarized in checking boolean statements
+2.Why the test failed at first?
+- Misunderstood the way of checking inside actualResults array.
+3.Why you corrected the test that way?
+- Because I thought that it would output the values of actualResults
+4.Do you have further questions on this knowledge point?
+- None
+
+should_do_bitwise_and_boolean_operation:
+1.What is the knowledge point of the test? Where is the official document to the knowledge point?
+- To practice with bollean and binary codes
+2.Why the test failed at first?
+- I didn't know how to convert hexadecimals codes to binary
+3.Why you corrected the test that way?
+- Because that is the result of the binary when AND
+4.Do you have further questions on this knowledge point?
+- None
+
+should_do_bitwise_or_boolean_operation:
+1.What is the knowledge point of the test? Where is the official document to the knowledge point?
+- To practice with bollean and binary codes
+2.Why the test failed at first?
+- no failed test
+3.Why you corrected the test that way?
+- Because that is the result of the binary when inclusive OR
+4.Do you have further questions on this knowledge point?
+- None
+
+
+should_describe_escaped_chars:
+1.What is the knowledge point of the test? Where is the official document to the knowledge point?
+- To practice escape characters
+- https://www.freeformatter.com/java-dotnet-escape.html
+2.Why the test failed at first?
+- no failed test
+3.Why you corrected the test that way?
+- Because that is the proper way or the escape format to prevent compilation errors
+4.Do you have further questions on this knowledge point?
+- None
+
+
