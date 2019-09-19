@@ -87,8 +87,8 @@ class IntegerTypeTest {
         --theNumberWillUnderflow;
 
         // TODO: Please correct the value to pass the test.
-        // <--start
-        final int expectedResult = 0;
+        // <--start;
+        final int expectedResult = Integer.MIN_VALUE-1;
         // --end-->
 
         assertEquals(expectedResult, theNumberWillUnderflow);
@@ -97,7 +97,7 @@ class IntegerTypeTest {
     @SuppressWarnings("ResultOfMethodCallIgnored")
     @Test
     void should_throw_exception_when_overflow() {
-        int theNumberWillOverflow = Integer.MAX_VALUE;
+        int theNumberWillOverflow = Integer.MAX_VALUE + 1;
 
         assertThrows(ArithmeticException.class, () -> add(theNumberWillOverflow, 1));
     }
@@ -115,8 +115,8 @@ class IntegerTypeTest {
 
         // TODO: please modify the following lines to pass the test
         // <!--start
-        final double expectedResult1 = Double.POSITIVE_INFINITY;
-        final double expectedResult2 = Double.POSITIVE_INFINITY;
+        final double expectedResult1 = 2/3*5;
+        final double expectedResult2 = 2*5/3;
         // --end-->
 
         assertEquals(expectedResult1, result1, +1.0E-05);
@@ -130,7 +130,7 @@ class IntegerTypeTest {
 
         // TODO: please modify the following lines to pass the test
         // <!--start
-        final short expected = 0;
+        final short expected = 17767;
         // --end-->
 
         assertEquals(expected, smallerInteger);
@@ -144,8 +144,8 @@ class IntegerTypeTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final int expectedCurrentInteger = 0;
-        final int expectedResult = 0;
+        final int expectedCurrentInteger = 4;
+        final int expectedResult = 3;
         // --end-->
 
         assertEquals(expectedCurrentInteger, integer);
@@ -160,8 +160,8 @@ class IntegerTypeTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final int expectedCurrentInteger = 0;
-        final int expectedResult = 0;
+        final int expectedCurrentInteger = 4;
+        final int expectedResult = 4;
         // --end-->
 
         assertEquals(expectedCurrentInteger, integer);
@@ -172,6 +172,21 @@ class IntegerTypeTest {
     private int add(int left, int right) {
         // TODO: Please find the method that adding two numbers with overflow checking.
         // The method should throw ArithmeticException if overflow or underflow happens.
-        throw new NotImplementedException();
+
+            final int result = left + right;
+
+            if (result > Integer.MAX_VALUE + 1)
+            {
+                throw new ArithmeticException();
+            }
+            else
+            {
+                return result;
+            }
+
+
+
+
+//        throw new NotImplementedException();
     }
 }

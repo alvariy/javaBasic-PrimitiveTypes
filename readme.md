@@ -176,4 +176,15 @@ should_overflow_silently:
 4.Do you have further questions on this knowledge point?
 - None
 
+should_underflow_silently:
+1.What is the knowledge point of the test? Where is the official document to the knowledge point?
+- https://www.tutorialspoint.com/Java-overflow-and-underflow
+- Examine the VALUE of Integer.MIN_VALUE and what will happen if you overflow it
+2.Why the test failed at first?
+- no failed test
+3.Why you corrected the test that way?
+- If you minus 1 to the Integer.MIN_VALUE it will overflow
+4.Do you have further questions on this knowledge point?
+- None
+
 
