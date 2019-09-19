@@ -165,4 +165,15 @@ should_get_range_of_primitive_byte_type:
 4.Do you have further questions on this knowledge point?
 - None
 
+should_overflow_silently:
+1.What is the knowledge point of the test? Where is the official document to the knowledge point?
+- https://www.tutorialspoint.com/Java-overflow-and-underflow
+- Examine the VALUE of Integer.MAX and what will happen if you overflow it
+2.Why the test failed at first?
+- no failed test
+3.Why you corrected the test that way?
+- If you add 1 to the Integer.MAX it will overflow
+4.Do you have further questions on this knowledge point?
+- None
+
 
