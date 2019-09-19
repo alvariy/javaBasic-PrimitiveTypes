@@ -121,3 +121,48 @@ should_describe_escaped_chars:
 - None
 
 
+should_describe_escaped_chars:
+1.What is the knowledge point of the test? Where is the official document to the knowledge point?
+- To practice escape characters
+- https://www.freeformatter.com/java-dotnet-escape.html
+2.Why the test failed at first?
+- no failed test
+3.Why you corrected the test that way?
+- Because that is the proper way or the escape format to prevent compilation errors
+4.Do you have further questions on this knowledge point?
+- None
+
+should_get_range_of_primitive_short_type:
+1.What is the knowledge point of the test? Where is the official document to the knowledge point?
+- https://www.dotnetperls.com/integer-java
+- Examine the MIN_VALUE and MAX_VALUE final ints on Short and other classes. Use loop boundaries.
+2.Why the test failed at first?
+- no failed test
+3.Why you corrected the test that way?
+- This is the way to check the minimum value and maximum value of Short without using concrete numbers
+4.Do you have further questions on this knowledge point?
+- None
+
+should_get_range_of_primitive_long_type:
+1.What is the knowledge point of the test? Where is the official document to the knowledge point?
+- https://www.dotnetperls.com/integer-java
+- Examine the MIN_VALUE and MAX_VALUE final ints on Long and other classes. Use loop boundaries.
+2.Why the test failed at first?
+- no failed test
+3.Why you corrected the test that way?
+- This is the way to check the minimum value and maximum value of Long without using concrete numbers
+4.Do you have further questions on this knowledge point?
+- None
+
+should_get_range_of_primitive_byte_type:
+1.What is the knowledge point of the test? Where is the official document to the knowledge point?
+- https://www.dotnetperls.com/integer-java
+- Examine the MIN_VALUE and MAX_VALUE final ints on Byte and other classes. Use loop boundaries.
+2.Why the test failed at first?
+- no failed test
+3.Why you corrected the test that way?
+- This is the way to check the minimum value and maximum value of Byte without using concrete numbers
+4.Do you have further questions on this knowledge point?
+- None
+
+
